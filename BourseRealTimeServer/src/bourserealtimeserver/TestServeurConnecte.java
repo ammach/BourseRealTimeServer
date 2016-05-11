@@ -9,13 +9,13 @@ package bourserealtimeserver;
  *
  * @author ammach
  */
-public class BourseRealTimeServer {
+public class TestServeurConnecte {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       new ServeurConnecte(); 
     }
     
 }
