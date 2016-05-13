@@ -22,7 +22,7 @@ import org.json.JSONObject;
  */
 public class ActionThread extends Thread{
     
-    ArrayList<Action> actions;
+    ArrayList<Object> actions;
     Socket socket;
     String data;
     
@@ -39,8 +39,7 @@ public class ActionThread extends Thread{
         super.run(); 
         while (true) {              
             try {
-                actions=new ArrayList<Action>(); 
-                actions.add(new Action("action", "action", "action", "action", "action"));
+                actions=new ArrayList<Object>(); 
                 JSONObject jSONObject = new JSONObject(data);
                 JSONObject list = jSONObject.getJSONObject("list");
                 JSONArray resources = list.getJSONArray("resources");

@@ -37,7 +37,7 @@ public class ClientConnecte {
 	}
 
     }
-    public void envoiObject(ArrayList<Action> data){
+    public void envoiObject(ArrayList<Object> data){
         try {
             ObjectOutputStream objectOutputStream =new ObjectOutputStream(sock.getOutputStream());
             objectOutputStream.writeObject(data);

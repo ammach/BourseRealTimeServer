@@ -5,6 +5,10 @@
  */
 package bourserealtimeserver;
 
+import classes.Action;
+import classes.Change;
+import java.util.ArrayList;
+
 /**
  *
  * @author ammach
@@ -15,7 +19,7 @@ public class TestServeurConnecte {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       new ServeurConnecte(); 
+       new ServeurConnecte();
     }
     
 }
