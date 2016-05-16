@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
@@ -67,6 +68,8 @@ public class ActionThread extends Thread{
             this.sleep(6000);
             } catch (InterruptedException ex) {
                 Logger.getLogger(ChangeThread.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JSONException ex) {
+                Logger.getLogger(ActionThread.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }

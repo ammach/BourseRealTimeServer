@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
@@ -66,6 +67,8 @@ public  class ChangeThread extends Thread{
                // clientConnecte.fermer();
             this.sleep(10000);
             } catch (InterruptedException ex) {
+                Logger.getLogger(ChangeThread.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JSONException ex) {
                 Logger.getLogger(ChangeThread.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
